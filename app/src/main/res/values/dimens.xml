@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="items_spacing_toolbar_large">34dp</dimen>
+    <dimen name="items_spacing_toolbar_small">20dp</dimen>
+    <dimen name="edit_text_search_width">358dp</dimen>
+    <dimen name="edit_text_search_height">38dp</dimen>
+    <dimen name="edit_text_button_search_height">28dp</dimen>
+    <dimen name="edit_text_button_search_width">78dp</dimen>
+    <dimen name="edit_text_spacing">15dp</dimen>
+    <dimen name="btn_history_height">38dp</dimen>
+    <dimen name="btn_history_width">102dp</dimen>
+    <dimen name="toolbar_user_width">30dp</dimen>
+    <dimen name="toolbar_user_height">30dp</dimen>
+</resources>

@@ -11,7 +11,11 @@
     <color name="selected_tab">#00BCCA</color>
     <color name="unselected_tab">#747898</color>
     <color name="btn_search">#8379EE</color>
+    <color name="edit_text_search">#29FFFFFF</color>
+    <color name="user_circle">#5065A5</color>
     <color name="red">#D40000</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#ECECEC</color>
+
 </resources>

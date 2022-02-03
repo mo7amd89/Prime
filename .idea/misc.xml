@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/btn_with_border_radius.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/circle.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ic_user.xml" value="0.2105" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_content.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.12994791666666666" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.11" />
       </map>
     </option>
   </component>
