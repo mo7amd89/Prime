@@ -2,14 +2,19 @@
 <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appBarLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
+        android:id="@+id/toolbar"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/main_purple"
-        app:navigationIcon="@drawable/ic_harmburger">
+        app:navigationIcon="@drawable/ic_harmburger"
+        app:navigationIconTint="@color/white"
+
+        >
 
         <ImageView
             android:layout_width="wrap_content"
@@ -35,6 +40,7 @@
                 android:drawablePadding="@dimen/edit_text_spacing"
                 android:hint="@string/search_cases_and_files"
                 android:inputType="text"
+                android:textColor="@color/white"
                 android:paddingStart="@dimen/edit_text_spacing"
                 android:textColorHint="@color/grey"
                 app:layout_constraintBottom_toBottomOf="parent"
