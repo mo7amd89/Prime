@@ -6,4 +6,15 @@
     <string name="search">Search</string>
     <string name="history">History</string>
     <string name="user_profile">User Profile</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="latest_judgements">Latest Judgements</string>
+    <string name="menu_image">Menu Image</string>
+    <string name="law_reports">Law Reports</string>
+    <string name="laws_of_nigeria">Laws of Nigeria</string>
+    <string name="civil_procedure_rules">Civil Procedure Rules</string>
+    <string name="index_digest"><![CDATA[Index & Digest]]></string>
+    <string name="textbook_journals"><![CDATA[Textbooks & Journals]]></string>
+    <string name="research_folder">My Research Folder</string>
+    <string name="words_in_gold">Words in Gold</string>
+    <string name="new_contents">New Contents</string>
 </resources>

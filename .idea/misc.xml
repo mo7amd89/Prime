@@ -3,13 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_harmburger_2.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/btn_with_border_radius.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.139" />
+        <entry key="app/src/main/res/drawable/ic_dashboard.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/ic_harmburger.xml" value="0.186" />
+        <entry key="app/src/main/res/drawable/ic_harmburger_2.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/ic_user.xml" value="0.2105" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11" />
+        <entry key="app/src/main/res/layout-land/toolbar.xml" value="0.11" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-sw600dp/toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_content.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.11" />
+        <entry key="app/src/main/res/layout/fragment_master.xml" value="0.1175" />
+        <entry key="app/src/main/res/layout/master_fragment.xml" value="0.12994791666666666" />
+        <entry key="app/src/main/res/layout/row_menu_action_item.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.19811950683593751" />
       </map>
     </option>
   </component>
