@@ -40,8 +40,8 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //dependencies version
     def android_core_version = "1.7.0"
@@ -61,8 +61,6 @@ dependencies {
     def material_dialog_version = "2.2.3"
     def lottie_animation_version = "4.2.2"
     def drawer_layout_version = "1.1.1"
-    def material_drawer_version = "9.0.0-b01"
-    def cross_fader_version = "1.6.0"
 
     //core
     implementation "androidx.core:core-ktx:$android_core_version"
@@ -108,13 +106,5 @@ dependencies {
     //drawer layout
     implementation "androidx.drawerlayout:drawerlayout:$drawer_layout_version"
 
-    //material drawer
-    implementation "com.mikepenz:materialdrawer:$material_drawer_version"
-
-    //material drawer with nav controller support
-    implementation "com.mikepenz:materialdrawer-nav:$material_drawer_version"
-
-    //cross fader
-    implementation "com.mikepenz:crossfader:$cross_fader_version"
 
 }

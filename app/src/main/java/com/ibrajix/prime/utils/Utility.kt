@@ -1,4 +1,4 @@
-package com.ibrajix.prime.ui.utils
+package com.ibrajix.prime.utils
 
 import android.content.Context
 

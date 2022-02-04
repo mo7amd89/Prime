@@ -2,12 +2,9 @@ package com.ibrajix.prime.ui.adapter
 
 
 import android.app.Activity
-import android.view.ViewGroup
-import android.view.MenuItem
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
+import android.view.ViewGroup
+import android.widget.*
 import androidx.core.content.ContextCompat
 import com.ibrajix.prime.R
 import com.ibrajix.prime.ui.model.MenuActionItem
@@ -88,5 +85,7 @@ class MenuListAdapter(var resource: Int, var activity: Activity, items: Array<Me
         var menuItemImageView: ImageView? = null
         var menuItemTextView: TextView? = null
     }
+
+
 
 }

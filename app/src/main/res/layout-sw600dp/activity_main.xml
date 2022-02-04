@@ -27,7 +27,7 @@
             <fragment
                 android:id="@+id/fragment_master"
                 android:name="com.ibrajix.prime.ui.fragment.MasterFragment"
-                android:layout_width="280dp"
+                android:layout_width="@dimen/fragment_master_default_width_tablet"
                 android:layout_height="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,5 +50,45 @@
 
 
     </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvFilterBtnFragDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:tint="@android:color/white"
+            android:backgroundTint="@color/main_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_notification"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvConnCountToolbarWithTab"
+            android:layout_width="@dimen/fab_text_badge_size"
+            android:layout_height="@dimen/fab_text_badge_size"
+            android:background="@drawable/circle_white"
+            android:elevation="@dimen/fab_text_elevation"
+            android:gravity="center"
+            android:text="@string/two"
+            android:textColor="@color/red"
+            app:layout_constraintCircle="@+id/floating_action_button"
+            app:layout_constraintCircleAngle="0"
+            app:layout_constraintCircleRadius="@dimen/fab_text_circle_radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

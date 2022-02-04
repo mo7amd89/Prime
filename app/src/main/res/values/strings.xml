@@ -17,4 +17,8 @@
     <string name="research_folder">My Research Folder</string>
     <string name="words_in_gold">Words in Gold</string>
     <string name="new_contents">New Contents</string>
+    <string name="notification">Notification</string>
+    <string name="two">2</string>
+    <string name="from_law_pavillion">From LawPavilion</string>
+    <string name="law_pavillion">LawPavilion</string>
 </resources>
