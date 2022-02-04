@@ -23,7 +23,7 @@
         <fragment
             android:id="@+id/fragment_master"
             android:name="com.ibrajix.prime.ui.fragment.MasterFragment"
-            android:layout_width="220dp"
+            android:layout_width="280dp"
             android:layout_height="match_parent">
 
         </fragment>
@@ -33,7 +33,6 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/detail_view_margin"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph" />
 

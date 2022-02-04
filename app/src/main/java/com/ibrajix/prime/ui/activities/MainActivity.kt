@@ -1,28 +1,21 @@
 package com.ibrajix.prime.ui.activities
 
 import android.os.Bundle
-import android.view.MenuItem
-import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.widget.CompoundButton
+import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.GravityCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.ibrajix.prime.R
 import com.ibrajix.prime.databinding.ActivityMainBinding
 import com.ibrajix.prime.databinding.ToolbarBinding
-import com.mikepenz.materialdrawer.interfaces.OnCheckedChangeListener
-import com.mikepenz.materialdrawer.model.DividerDrawerItem
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
-import com.mikepenz.materialdrawer.model.interfaces.Nameable
-import com.mikepenz.materialdrawer.model.interfaces.nameRes
-import com.mikepenz.materialdrawer.util.setupWithNavController
-import com.mikepenz.materialdrawer.widget.MaterialDrawerSliderView
+import com.ibrajix.prime.ui.utils.Constants.COMPRESSED_WIDTH_MOBILE
+import com.ibrajix.prime.ui.utils.Constants.COMPRESSED_WIDTH_TABLET
+import com.ibrajix.prime.ui.utils.Constants.EXPANDED_WIDTH_MOBILE
+import com.ibrajix.prime.ui.utils.Constants.EXPANDED_WIDTH_TABLET
+import com.ibrajix.prime.ui.utils.Utility
+import kotlin.math.exp
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,6 +27,9 @@ class MainActivity : AppCompatActivity() {
     //get navHost fragment
     lateinit var navHostFragment: NavHostFragment
     lateinit var navController: NavController
+
+    private var expandedWidth: Int = EXPANDED_WIDTH_MOBILE
+    var compressedWidth: Int = COMPRESSED_WIDTH_MOBILE
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,28 +47,56 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         handleActionBar()
-
-        buildMiniSliderDrawer()
-
-    }
-
-    private fun buildMiniSliderDrawer(){
-
     }
 
 
     private fun handleActionBar(){
+
         setSupportActionBar(toolbarBinding.toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
+
+        val fragment = supportFragmentManager.findFragmentById(R.id.fragment_master)
+        val fragmentParams: ViewGroup.LayoutParams? = fragment?.view?.layoutParams
+
+        if(Utility.isTablet(this)){
+            expandedWidth = EXPANDED_WIDTH_TABLET
+            compressedWidth = COMPRESSED_WIDTH_TABLET
+        }
+        else {
+            expandedWidth = EXPANDED_WIDTH_MOBILE
+            compressedWidth = COMPRESSED_WIDTH_MOBILE
+        }
+
+
+        binding.includedToolbar.toolbar.setNavigationOnClickListener {
+
+            if (fragmentParams?.width!! >= expandedWidth){
+                fragmentParams.width = compressedWidth
+                fragment.view?.layoutParams = fragmentParams
+            }
+            else{
+                fragmentParams.width = expandedWidth
+                fragment.view?.layoutParams = fragmentParams
+            }
+
+        }
+
     }
 
 
-    override fun onBackPressed() {
-        /*if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
+   override fun onBackPressed() {
+
+       val fragment = supportFragmentManager.findFragmentById(R.id.fragment_master)
+       val fragmentParams: ViewGroup.LayoutParams? = fragment?.view?.layoutParams
+
+        if (fragmentParams?.width!! >= expandedWidth){
+            fragmentParams.width = compressedWidth
+            fragment.view?.layoutParams = fragmentParams
+        }
+        else{
             super.onBackPressed()
-        }*/
+        }
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
