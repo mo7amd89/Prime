@@ -37,7 +37,7 @@
         android:text="@string/law_pavillion"
         android:textColor="@color/main_orange"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="@dimen/branding_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

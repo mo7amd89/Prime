@@ -1,4 +1,4 @@
-package com.ibrajix.prime.di
+package com.ibrajix.prime.hilt
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

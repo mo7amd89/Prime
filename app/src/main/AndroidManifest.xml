@@ -3,7 +3,7 @@
     package="com.ibrajix.prime">
 
     <application
-        android:name=".di.MyApplication"
+        android:name=".hilt.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo_prime"
         android:label="@string/app_name"
@@ -12,7 +12,8 @@
         android:theme="@style/Theme.Prime">
         <activity
             android:name=".ui.activities.IntroActivity"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,5 +19,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="fab_text_elevation">7dp</dimen>
     <dimen name="fab_text_circle_radius">20sp</dimen>
+    <dimen name="branding_text_size">20sp</dimen>
 
 </resources>
