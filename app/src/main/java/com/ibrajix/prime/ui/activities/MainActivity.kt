@@ -75,11 +75,11 @@ class MainActivity : AppCompatActivity() {
             binding.lytDetail?.visibility = View.GONE
         }*/
 
-        binding.close?.setOnClickListener {
+       /* binding.close?.setOnClickListener {
             //change fragment container view to the normal view
             binding.navHostFragment.setBackgroundColor(ContextCompat.getColor(this, R.color.content_background))
             binding.lytDetail?.visibility = View.GONE
-        }
+        }*/
 
     }
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -59,8 +60,17 @@ class ContentFragment : Fragment() {
         val fragmentView = activity?.findViewById<FragmentContainerView>(R.id.nav_host_fragment)
         val detailView = activity?.findViewById<ConstraintLayout>(R.id.lyt_detail)
 
+        val closeButton = activity?.findViewById<AppCompatButton>(R.id.close)
+
+        closeButton?.setOnClickListener {
+            fragmentView?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.content_background))
+            binding.root.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.content_background))
+            detailView?.visibility = View.GONE
+        }
+
         casesAdapter = CasesAdapter(CasesAdapter.OnCaseClickListener{
             fragmentView?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.fragment_view_when_clicked))
+            binding.root.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.fragment_view_when_clicked))
             detailView?.visibility = View.VISIBLE
         })
 
