@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/card_unselected"
+        android:padding="@dimen/main_content_cases_padding">
+
+        <TextView
+            android:id="@+id/txt_delivery_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_on_card_unselected"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.228"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Delivered on 20-10-2019" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/logo_shirt_width_height"
+            android:layout_height="@dimen/logo_shirt_width_height"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo_shirt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_first_client_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_margin_spacing_top"
+            android:textSize="@dimen/card_clients_name_size"
+            app:layout_constraintStart_toStartOf="@+id/txt_delivery_date"
+            app:layout_constraintTop_toBottomOf="@+id/txt_delivery_date"
+            tools:text="Mailarka" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_margin_spacing_vs"
+            android:text="@string/vs"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_first_client_name"
+            app:layout_constraintStart_toEndOf="@+id/txt_first_client_name"
+            app:layout_constraintTop_toTopOf="@+id/txt_first_client_name" />
+
+        <TextView
+            android:id="@+id/txt_second_client_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_margin_spacing_vs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/card_clients_name_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            tools:text="Moloko" />
+
+        <TextView
+            android:id="@+id/txt_generated_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_margin_spacing_top"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_first_client_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:text="(2019) LPER 234" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

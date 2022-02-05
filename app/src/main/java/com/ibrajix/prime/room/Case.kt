@@ -9,8 +9,12 @@ data class Case(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     val id: Int? = null,
-    @ColumnInfo(name = "clientsName")
-    val clientName: String,
+    @ColumnInfo(name = "date")
+    val date: String,
+    @ColumnInfo(name = "firstClientName")
+    val firstClientName: String,
+    @ColumnInfo(name = "secondClientName")
+    val secondClientName: String,
     @ColumnInfo(name = "genId")
     val genId: String
 )

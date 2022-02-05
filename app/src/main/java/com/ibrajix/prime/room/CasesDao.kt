@@ -7,10 +7,10 @@ import kotlinx.coroutines.flow.Flow
 interface CasesDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertCases(case: Case)
+    suspend fun insertCases(case: List<Case>)
 
     @Transaction
     @Query("SELECT * FROM cases_table ORDER BY id DESC")
-    fun getAllAlarms(): Flow<List<Case>>
+    fun getAllCases(): Flow<List<Case>>
 
 }

@@ -21,4 +21,9 @@
     <string name="two">2</string>
     <string name="from_law_pavillion">From LawPavilion</string>
     <string name="law_pavillion">LawPavilion</string>
+    <string name="logo">logo</string>
+    <string name="vs">v.</string>
+    <string name="latest_judgements_overview">Latest Judgements Overview</string>
+    <string name="supreme_court">Supreme Court</string>
+    <string name="court_of_appeal">Court of Appeal</string>
 </resources>
