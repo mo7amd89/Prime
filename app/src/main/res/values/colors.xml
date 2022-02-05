@@ -25,5 +25,6 @@
     <color name="detail_tile_background">#262C60</color>
     <color name="code_details_background">#E8F7EC</color>
     <color name="code_details_text_color">#72B17A</color>
+    <color name="fragment_view_when_clicked">#4D415276</color>
 
 </resources>

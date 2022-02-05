@@ -5,12 +5,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentContainerView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.GridLayoutManager
+import com.ibrajix.prime.R
 import com.ibrajix.prime.databinding.FragmentContentBinding
 import com.ibrajix.prime.ui.adapter.CasesAdapter
 import com.ibrajix.prime.ui.viewModel.DatabaseViewModel
@@ -51,9 +55,18 @@ class ContentFragment : Fragment() {
     }
 
     private fun initView(){
-        casesAdapter = CasesAdapter()
+
+        val fragmentView = activity?.findViewById<FragmentContainerView>(R.id.nav_host_fragment)
+        val detailView = activity?.findViewById<ConstraintLayout>(R.id.lyt_detail)
+
+        casesAdapter = CasesAdapter(CasesAdapter.OnCaseClickListener{
+            fragmentView?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.fragment_view_when_clicked))
+            detailView?.visibility = View.VISIBLE
+        })
+
         insertAndGetData()
         setUpRecyclerView()
+
     }
 
     private fun setUpRecyclerView(){

@@ -13,15 +13,13 @@ import com.ibrajix.prime.databinding.RcvMainContentCasesBinding
 import com.ibrajix.prime.room.Case
 
 
-class CasesAdapter : ListAdapter<Case, CasesAdapter.CasesViewHolder>(CasesDiffCallback()) {
-
-    var rowPosition = -1
+class CasesAdapter(private val onClickListener: OnCaseClickListener) : ListAdapter<Case, CasesAdapter.CasesViewHolder>(CasesDiffCallback()) {
 
     private var cardViewList = mutableListOf<CardView>()
 
     class CasesViewHolder private constructor(private val binding: RcvMainContentCasesBinding) : RecyclerView.ViewHolder(binding.root){
 
-        fun bindCase(case: Case, holder: CasesViewHolder){
+        fun bindCase(case: Case){
 
             binding.txtDeliveryDate.text = case.date
             binding.txtFirstClientName.text = case.firstClientName
@@ -63,31 +61,26 @@ class CasesAdapter : ListAdapter<Case, CasesAdapter.CasesViewHolder>(CasesDiffCa
         val item = getItem(position)
 
         if (item != null){
-            holder.bindCase(item, holder)
+            holder.bindCase(item)
         }
 
         if (!cardViewList.contains(holder.itemView.findViewById(R.id.container))) {
             cardViewList.add(holder.itemView.findViewById(R.id.container))
         }
 
-
-        holder.itemView.findViewById<CardView>(R.id.container).setOnClickListener{
-            for (cardView in cardViewList){
-                cardView.setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.card_unselected))
-            }
-            holder.itemView.findViewById<CardView>(R.id.container).setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.main_orange))
-        }
-
-
-        /* holder.itemView.setOnClickListener {
+         holder.itemView.setOnClickListener {
              if (item != null){
+                 for (cardView in cardViewList){
+                     cardView.setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.card_unselected))
+                 }
+                 holder.itemView.findViewById<CardView>(R.id.container).setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context, R.color.main_orange))
                  onClickListener.onClickCase(item)
              }
-         }*/
+         }
     }
 
-    /*class OnCaseClicked(val clickListener: (case: Case) -> Unit){
+    class OnCaseClickListener(val clickListener: (case: Case) -> Unit){
         fun onClickCase(case: Case) = clickListener(case)
-    }*/
+    }
 
 }
