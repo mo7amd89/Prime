@@ -13,7 +13,6 @@ object Utility {
         context: Context,
         columnWidthDp: Int
     ): Int {
-        // For example columnWidthdp=180
         val displayMetrics = context.resources.displayMetrics
         val screenWidthDp = displayMetrics.widthPixels / displayMetrics.density
         return (screenWidthDp / columnWidthDp + 0.5).toInt()
