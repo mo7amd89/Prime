@@ -22,5 +22,8 @@
     <color name="text_on_button_content">#737373</color>
     <color name="text_on_item_content_beside_button">#9BAAB2</color>
     <color name="content_background">#FAFAFA</color>
+    <color name="detail_tile_background">#262C60</color>
+    <color name="code_details_background">#E8F7EC</color>
+    <color name="code_details_text_color">#72B17A</color>
 
 </resources>

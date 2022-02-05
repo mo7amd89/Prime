@@ -26,4 +26,11 @@
     <string name="latest_judgements_overview">Latest Judgements Overview</string>
     <string name="supreme_court">Supreme Court</string>
     <string name="court_of_appeal">Court of Appeal</string>
+    <string name="essien_and_co">ESSSEN &amp; NOR V. MOHAMMED (2005, CA)</string>
+    <string name="close">Close</string>
+    <string name="principle">Principle</string>
+    <string name="code_date">(2020) LPELR-50514(CA)</string>
+    <string name="random_text">APPEAL - FORMULATION OF ISSUE(S) FOR DETERMINATION - Whether Court can suo m formulate re formulate issue(s) arising from ground(s) of appeal for determination of an appeal.....some more random stuffs. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="view_summary">View Summary</string>
+    <string name="read_full_judgement">Read Full Judgement</string>
 </resources>
