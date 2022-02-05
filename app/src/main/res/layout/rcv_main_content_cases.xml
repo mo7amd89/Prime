@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    android:id="@+id/container"
+    app:cardBackgroundColor="@color/card_unselected"
     app:cardCornerRadius="@dimen/card_view_corner_radius">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/card_unselected"
         android:padding="@dimen/main_content_cases_padding">
 
         <TextView
@@ -20,7 +21,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/text_on_card_unselected"
-            android:textSize="8sp"
+            android:textSize="@dimen/recyclerview_card_text_dates_size"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
             app:layout_constraintHorizontal_bias="0.228"
@@ -59,12 +60,12 @@
 
         <TextView
             android:id="@+id/txt_second_client_name"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/card_margin_spacing_vs"
             android:textColor="@color/black"
             android:textSize="@dimen/card_clients_name_size"
             android:textStyle="bold"
+            android:layout_marginStart="@dimen/card_margin_spacing_vs"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintStart_toEndOf="@+id/textView"
             app:layout_constraintTop_toTopOf="@+id/textView"
@@ -75,7 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/card_margin_spacing_top"
-            android:textSize="8sp"
+            android:textSize="@dimen/recyclerview_card_text_dates_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/txt_first_client_name"
             app:layout_constraintTop_toBottomOf="@+id/textView"
