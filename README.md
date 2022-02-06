@@ -1,6 +1,7 @@
-# Prime (For LawPavilion)
 
-##
+<h1><img src="https://user-images.githubusercontent.com/39574228/152663342-6240ba71-1f28-49a3-be83-4189e60723a3.png"></h1>
+
+
 At first glance, I actually thought this was a walkover test.
 
 Things started heating up when I started the implementation :)
@@ -45,7 +46,7 @@ This was a bit difficult because **the drawer icons has to be visible when in th
  
 2. I had some issues using GridLayout manager to adapt to various screen sizes while displaying the list of items from room database
  
--  FIX: I ended up with a small function to calculate the number of columns which was later used as the span count for the gridlayout 
+-  FIX: I ended up with a small function to calculate the number of columns which was later used as the span count for the gridlayout. With this, irrespective of the screen size, the items in grid layout automatically fits 
 
 
 ### TODO (Hopefully)
@@ -56,8 +57,8 @@ This was a bit difficult because **the drawer icons has to be visible when in th
 
 ### NB
 
-This design was only optimized for tablet variants (landscaped view as shown in figma link and stated in docs).
+This design was only optimized for tablet variants (as shown in figma link (landscaped view) and stated in docs).
 
-I tried to implement a mobile variant, but due to time constraint, it is not as efficient YET.
+I also went further and tried to implement a mobile variant, but due to time constraint; it is not as efficient YET.
 
 
