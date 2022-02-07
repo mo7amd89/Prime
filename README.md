@@ -19,7 +19,11 @@ Things started heating up when I started the implementation :)
 
 ### FINAL APK
 
-<a href="">Click to download</a>
+<a href="https://github.com/ibrajix/Prime/releases/download/v1.0/prime.apk">Click to download</a>
+
+### SCREENSHOTS(I know it was stated to build specifically for tablet but I also tried to do something for mobile variant)
+
+<img src="https://user-images.githubusercontent.com/39574228/152694438-9d03bb2d-b0df-488e-bfc9-fe7077ffd6a3.jpg" width="200"/> <img src="https://user-images.githubusercontent.com/39574228/152812787-f4dfb49e-45d6-49a8-bdf9-4ab57306c55f.jpg" width="200"/> <img src="https://user-images.githubusercontent.com/39574228/152813055-a773a57d-b671-4dca-b7d8-a967ee1c1b36.jpg" width="200"/> 
 
 
 ### ARCHITECTURE
@@ -57,7 +61,7 @@ This was a bit difficult because **the drawer icons has to be visible when in th
 
 ### NB
 
-This design was only optimized for tablet variants (as shown in figma link (landscaped view) and stated in docs).
+This design was optimized for tablet variants (as shown in figma link (landscaped view) and stated in docs).
 
 I also went further and tried to implement a mobile variant, but due to time constraint; it is not as efficient YET.
 
