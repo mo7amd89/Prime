@@ -25,7 +25,7 @@
     <dimen name="logo_shirt_width_height">24dp</dimen>
     <dimen name="card_margin_spacing_vs">5dp</dimen>
     <dimen name="card_margin_spacing_top">24dp</dimen>
-    <dimen name="card_clients_name_size">18sp</dimen>
+    <dimen name="card_clients_name_size">13sp</dimen>
     <dimen name="item_offset">18dp</dimen>
     <dimen name="recyclerview_card_text_dates_size">8sp</dimen>
 

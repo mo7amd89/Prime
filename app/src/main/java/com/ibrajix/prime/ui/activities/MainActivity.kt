@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.ContextMenu
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -53,33 +54,6 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         handleActionBar()
-        setUpCaseClickListener()
-
-    }
-
-    private fun setUpCaseClickListener(){
-
-       /* casesAdapter = CasesAdapter(CasesAdapter.OnCaseClickListener{
-
-            //on click, change fragment container view background
-            binding.navHostFragment.setBackgroundColor(ContextCompat.getColor(this, R.color.fragment_view_when_clicked))
-            binding.lytDetail?.visibility = View.VISIBLE
-
-            Toast.makeText(this, it.toString(), Toast.LENGTH_LONG).show()
-        })
-
-        //on click close
-        binding.close?.setOnClickListener {
-            //change fragment container view to the normal view
-            binding.navHostFragment.setBackgroundColor(ContextCompat.getColor(this, R.color.content_background))
-            binding.lytDetail?.visibility = View.GONE
-        }*/
-
-       /* binding.close?.setOnClickListener {
-            //change fragment container view to the normal view
-            binding.navHostFragment.setBackgroundColor(ContextCompat.getColor(this, R.color.content_background))
-            binding.lytDetail?.visibility = View.GONE
-        }*/
 
     }
 
@@ -113,6 +87,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+        //hides keyboard on start
+        this.window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN)
 
     }
 
